@@ -1,0 +1,484 @@
+optimizer = torch.optim.AdamW(model.parameters(), lr=5e-5)
+lambda_lr = lambda epoch: max(0.7 ** epoch, 2e-1)1/100
+lr: 5e-05
+Train-1: 0.0000980537626497
+Train-1: Acc:0.5609785304162234
+KS statistic: 0.8869371409556646 ,p-value: 0.0
+ad_stat: 1341073.8550145489 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.8416132095963914 ,p-value: 0.0
+ad_stat: 1074602.9336303445 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7759390034801015 ,p-value: 0.0
+ad_stat: 890049.1183703716 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6050546972126836 ,p-value: 0.0
+ad_stat: 611831.4059828008 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6162408202502161 ,p-value: 0.0
+ad_stat: 617541.1054409543 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5700162450952753 ,p-value: 0.0
+ad_stat: 577551.1477593111 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5435734819039344 ,p-value: 0.0
+ad_stat: 570250.5229940129 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+sum_ks_stat: 4.839374598494267 ,sum_ad_stat: 5682900.089192344
+Valid-1: 0.0000000039733020
+Valid-1: Acc:0.4602967362576926
+2/100
+lr: 3.5e-05
+Train-2: 0.0000000052440526
+Train-2: Acc:0.5609830019990619
+KS statistic: 0.8805846847804486 ,p-value: 0.0
+ad_stat: 1287451.6487034578 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7424528476288632 ,p-value: 0.0
+ad_stat: 820634.2092672494 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.789244730165039 ,p-value: 0.0
+ad_stat: 916898.2869752798 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7255087279836209 ,p-value: 0.0
+ad_stat: 775289.4759830368 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6965870279563532 ,p-value: 0.0
+ad_stat: 729072.6377520176 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7528163171929954 ,p-value: 0.0
+ad_stat: 840853.2751652747 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6926748023089757 ,p-value: 0.0
+ad_stat: 718024.2368215435 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+sum_ks_stat: 5.279869138016297 ,sum_ad_stat: 6088223.770667859
+Valid-2: 0.0000000040639225
+Valid-2: Acc:0.4545254524098927
+3/100
+lr: 2.45e-05
+Train-3: 0.0000000052299629
+Train-3: Acc:0.5610354829954960
+KS statistic: 0.7624923165089914 ,p-value: 0.0
+ad_stat: 950289.0490492726 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7695033576278002 ,p-value: 0.0
+ad_stat: 877859.2198940483 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5530807910413962 ,p-value: 0.0
+ad_stat: 580019.662192156 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.64737571231161 ,p-value: 0.0
+ad_stat: 654902.8688789055 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6189808802392165 ,p-value: 0.0
+ad_stat: 626258.129162923 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5481321606669962 ,p-value: 0.0
+ad_stat: 572527.9506063986 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5449247364504815 ,p-value: 0.0
+ad_stat: 574197.3720705494 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+sum_ks_stat: 4.444489954846491 ,sum_ad_stat: 4836054.251854253
+Valid-3: 0.0000000039195505
+Valid-3: Acc:0.5001784286526375
+4/100
+lr: 1.7149999999999997e-05
+Train-4: 0.0000000052207102
+Train-4: Acc:0.5610543790391045
+KS statistic: 0.8166834586570413 ,p-value: 0.0
+ad_stat: 1066844.1115043673 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7547938051420464 ,p-value: 0.0
+ad_stat: 845015.4370853567 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7200234086508022 ,p-value: 0.0
+ad_stat: 765869.7851945225 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5692484737005079 ,p-value: 0.0
+ad_stat: 586367.1659518024 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6096515045777431 ,p-value: 0.0
+ad_stat: 617190.4060515121 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.4843915368368512 ,p-value: 0.0
+ad_stat: 542960.4316240164 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.560238569507286 ,p-value: 0.0
+ad_stat: 580373.1621548923 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+sum_ks_stat: 4.515030757072278 ,sum_ad_stat: 5004620.49956647
+Valid-4: 0.0000000039214775
+Valid-4: Acc:0.4619627580943226
+5/100
+lr: 1.2004999999999998e-05
+Train-5: 0.0000000052149438
+Train-5: Acc:0.5609386708229629
+KS statistic: 0.8101946638443798 ,p-value: 0.0
+ad_stat: 1044148.4092452581 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7419548649785325 ,p-value: 0.0
+ad_stat: 815319.7309481797 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6352745028261382 ,p-value: 0.0
+ad_stat: 642891.9640084492 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5579554750361644 ,p-value: 0.0
+ad_stat: 580146.021382235 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6694775919361473 ,p-value: 0.0
+ad_stat: 684363.2087760821 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6257036460186807 ,p-value: 0.0
+ad_stat: 629460.6325361677 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.506423514024393 ,p-value: 0.0
+ad_stat: 565389.8122082638 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+sum_ks_stat: 4.546984258664436 ,sum_ad_stat: 4961719.779104636
+Valid-5: 0.0000000039301491
+Valid-5: Acc:0.4677362702370443
+6/100
+lr: 1e-05
+Train-6: 0.0000000052121413
+Train-6: Acc:0.5611467677103349
+KS statistic: 0.8684586339330693 ,p-value: 0.0
+ad_stat: 1226916.8711222745 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7074854533606318 ,p-value: 0.0
+ad_stat: 755037.8267876224 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5906397748332741 ,p-value: 0.0
+ad_stat: 598578.4740630501 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5189522260171093 ,p-value: 0.0
+ad_stat: 568655.6105844101 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5878338563499143 ,p-value: 0.0
+ad_stat: 599125.2555635954 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5842411021707884 ,p-value: 0.0
+ad_stat: 596064.3276252293 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.602262065969414 ,p-value: 0.0
+ad_stat: 608552.3372095327 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+sum_ks_stat: 4.4598731126342015 ,sum_ad_stat: 4952930.702955714
+Valid-6: 0.0000000039193228
+Valid-6: Acc:0.4682736194309958
+7/100
+lr: 1e-05
+Train-7: 0.0000000052123501
+Train-7: Acc:0.5610080765200335
+KS statistic: 0.8812663779676762 ,p-value: 0.0
+ad_stat: 1281621.2133542388 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7622854977284597 ,p-value: 0.0
+ad_stat: 859330.557277404 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6820900713120399 ,p-value: 0.0
+ad_stat: 703033.5630661076 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.646848266650645 ,p-value: 0.0
+ad_stat: 653127.5931975397 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6763453619444201 ,p-value: 0.0
+ad_stat: 694647.1849308718 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.589571018565163 ,p-value: 0.0
+ad_stat: 596350.7070492156 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5689318907627107 ,p-value: 0.0
+ad_stat: 585821.0493517689 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+sum_ks_stat: 4.807338484931115 ,sum_ad_stat: 5373931.868227147
+Valid-7: 0.0000000039407409
+Valid-7: Acc:0.4629323965031285
+8/100
+lr: 1e-05
+Train-8: 0.0000000052126072
+Train-8: Acc:0.5608320259763383
+KS statistic: 0.8415993446502105 ,p-value: 0.0
+ad_stat: 1141776.9521034947 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6507298738752063 ,p-value: 0.0
+ad_stat: 662270.1872093593 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6985945566221293 ,p-value: 0.0
+ad_stat: 728095.7081897256 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6462624726745019 ,p-value: 0.0
+ad_stat: 653187.538523188 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5570744732475863 ,p-value: 0.0
+ad_stat: 576777.6714321679 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5837587175849113 ,p-value: 0.0
+ad_stat: 592328.2267939285 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5812480069139865 ,p-value: 0.0
+ad_stat: 592991.3329362132 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+sum_ks_stat: 4.559267445568532 ,sum_ad_stat: 4947427.617188077
+Valid-8: 0.0000000039229132
+Valid-8: Acc:0.4747448354726065
+9/100
+lr: 1e-05
+Train-9: 0.0000000052123622
+Train-9: Acc:0.5609509075738492
+KS statistic: 0.8862028765141676 ,p-value: 0.0
+ad_stat: 1290869.782071096 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5912608088809602 ,p-value: 0.0
+ad_stat: 606657.544617623 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6280329569770721 ,p-value: 0.0
+ad_stat: 633443.2832614136 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5570993146094938 ,p-value: 0.0
+ad_stat: 580182.2145281231 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5197910552610538 ,p-value: 0.0
+ad_stat: 563458.7892497728 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5839684248958974 ,p-value: 0.0
+ad_stat: 592906.862954538 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6019385505585262 ,p-value: 0.0
+ad_stat: 608785.7666794612 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+sum_ks_stat: 4.368293987697172 ,sum_ad_stat: 4876304.243362027
+Valid-9: 0.0000000039218931
+Valid-9: Acc:0.4812640011197595
+10/100
+lr: 1e-05
+Train-10: 0.0000000052128879
+Train-10: Acc:0.5610074755008347
+KS statistic: 0.9047842152209379 ,p-value: 0.0
+ad_stat: 1362816.7218071118 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.8137336913570548 ,p-value: 0.0
+ad_stat: 988551.3938233474 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7172677505973482 ,p-value: 0.0
+ad_stat: 760734.3906627571 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6606877937635472 ,p-value: 0.0
+ad_stat: 670874.2655642973 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7260275080532229 ,p-value: 0.0
+ad_stat: 777556.1154172142 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7419132701399898 ,p-value: 0.0
+ad_stat: 809393.4020199138 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6458690548266188 ,p-value: 0.0
+ad_stat: 653302.415106215 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+sum_ks_stat: 5.21028328395872 ,sum_ad_stat: 6023228.704400856
+Valid-10: 0.0000000040437641
+Valid-10: Acc:0.4652131801498867
+11/100
+lr: 1e-05
+Train-11: 0.0000000052123512
+Train-11: Acc:0.5610179813164287
+KS statistic: 0.8547773982890656 ,p-value: 0.0
+ad_stat: 1192228.0796202205 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7551554491549315 ,p-value: 0.0
+ad_stat: 845421.0600168717 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6825632126004632 ,p-value: 0.0
+ad_stat: 703546.1848319172 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.689206254939387 ,p-value: 0.0
+ad_stat: 711635.565084797 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6524329514310936 ,p-value: 0.0
+ad_stat: 662649.8597103447 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6277793440031798 ,p-value: 0.0
+ad_stat: 635241.0419850883 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6552365590900898 ,p-value: 0.0
+ad_stat: 664415.5554081259 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+sum_ks_stat: 4.917151169508211 ,sum_ad_stat: 5415137.346657365
+Valid-11: 0.0000000039493747
+Valid-11: Acc:0.4545254524098927
+12/100
+lr: 1e-05
+Train-12: 0.0000000052129366
+Train-12: Acc:0.5611063070978757
+KS statistic: 0.39279854695364025 ,p-value: 0.0
+ad_stat: 301137.9471008138 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6673389239877434 ,p-value: 0.0
+ad_stat: 691488.8906550902 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5871388759225966 ,p-value: 0.0
+ad_stat: 597782.3503671496 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5277564668419812 ,p-value: 0.0
+ad_stat: 571499.3079215237 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5923607612779782 ,p-value: 0.0
+ad_stat: 601828.70201855 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5943151409833944 ,p-value: 0.0
+ad_stat: 604081.3774445324 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5478051790195635 ,p-value: 0.0
+ad_stat: 574905.8678770879 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+sum_ks_stat: 3.909513894986898 ,sum_ad_stat: 3942724.4433847475
+Valid-12: 0.0000000039131064
+Valid-12: Acc:0.5145825396752037
+13/100
+lr: 1e-05
+Train-13: 0.0000000052124484
+Train-13: Acc:0.5609628077539843
+KS statistic: 0.8174356319873551 ,p-value: 0.0
+ad_stat: 1071899.1411900246 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7776848312867133 ,p-value: 0.0
+ad_stat: 894847.5464135148 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5908985871619842 ,p-value: 0.0
+ad_stat: 599243.1142469188 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6104221645029648 ,p-value: 0.0
+ad_stat: 616710.2922379307 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5900164299612244 ,p-value: 0.0
+ad_stat: 598514.2936575878 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5550894751193541 ,p-value: 0.0
+ad_stat: 574046.9419081978 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5183698982775116 ,p-value: 0.0
+ad_stat: 565397.8979971957 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+sum_ks_stat: 4.459917018297108 ,sum_ad_stat: 4920659.22765137
+Valid-13: 0.0000000039181482
+Valid-13: Acc:0.4698859971306164
+14/100
+lr: 1e-05
+Train-14: 0.0000000052132628
+Train-14: Acc:0.5608928731600188
+KS statistic: 0.912343499419983 ,p-value: 0.0
+ad_stat: 1395970.5310432042 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7680330956265339 ,p-value: 0.0
+ad_stat: 873256.2586991607 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7542074334598124 ,p-value: 0.0
+ad_stat: 833433.8187528176 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6250670139065411 ,p-value: 0.0
+ad_stat: 629895.1717966764 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7278686573648283 ,p-value: 0.0
+ad_stat: 781224.6370617402 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6912917739274309 ,p-value: 0.0
+ad_stat: 719412.8894449729 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5846119894811275 ,p-value: 0.0
+ad_stat: 594618.4489197527 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+sum_ks_stat: 5.063423463186258 ,sum_ad_stat: 5827811.755718324
+Valid-14: 0.0000000039943926
+Valid-14: Acc:0.4545254524098927
+15/100
+lr: 1e-05
+Train-15: 0.0000000052132080
+Train-15: Acc:0.5609192939639954
+KS statistic: 0.857401917059892 ,p-value: 0.0
+ad_stat: 1188755.588282587 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6983218793472383 ,p-value: 0.0
+ad_stat: 732825.5480186943 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6569852754271559 ,p-value: 0.0
+ad_stat: 667360.4493806935 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5152930356375334 ,p-value: 0.0
+ad_stat: 559628.1771901086 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6010199978740416 ,p-value: 0.0
+ad_stat: 608640.9014440386 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5147603906217504 ,p-value: 0.0
+ad_stat: 560263.0677254499 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5276571013943514 ,p-value: 0.0
+ad_stat: 569931.5593495454 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+sum_ks_stat: 4.371439597361963 ,sum_ad_stat: 4887405.2913911175
+Valid-15: 0.0000000039145535
+Valid-15: Acc:0.4697989285697780
+16/100
+lr: 1e-05
+Train-16: 0.0000000052133754
+Train-16: Acc:0.5610590189073187
+KS statistic: 0.878279059771783 ,p-value: 0.0
+ad_stat: 1261681.3316207272 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5862717390801995 ,p-value: 0.0
+ad_stat: 585233.8712044827 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5793254010435682 ,p-value: 0.0
+ad_stat: 593267.2868570552 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.682729014248543 ,p-value: 0.0
+ad_stat: 702099.7514809598 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.638263554140304 ,p-value: 0.0
+ad_stat: 645060.7187820562 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6082124387053838 ,p-value: 0.0
+ad_stat: 613348.8011659702 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5100711502821517 ,p-value: 0.0
+ad_stat: 564128.4438223259 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+sum_ks_stat: 4.483152357271933 ,sum_ad_stat: 4964820.204933577
+Valid-16: 0.0000000039294319
+Valid-16: Acc:0.4879115825779688
+17/100
+lr: 1e-05
+Train-17: 0.0000000052128772
+Train-17: Acc:0.5611819153130773
+KS statistic: 0.827134739546986 ,p-value: 0.0
+ad_stat: 1093939.263706399 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.771669177762475 ,p-value: 0.0
+ad_stat: 880972.4742575963 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7069782274128473 ,p-value: 0.0
+ad_stat: 742333.8470080306 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6196365766523549 ,p-value: 0.0
+ad_stat: 624437.5643796214 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6627525153323196 ,p-value: 0.0
+ad_stat: 675850.4167041213 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6123586353195639 ,p-value: 0.0
+ad_stat: 616975.8301896341 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.594684295175461 ,p-value: 0.0
+ad_stat: 602527.3615897999 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+sum_ks_stat: 4.795214167202008 ,sum_ad_stat: 5237036.757835202
+Valid-17: 0.0000000039393547
+Valid-17: Acc:0.4652145831503930
+18/100
+lr: 1e-05
+Train-18: 0.0000000052128620
+Train-18: Acc:0.5610558695667174
+KS statistic: 0.8646555947368665 ,p-value: 0.0
+ad_stat: 1213606.5086467885 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7926127566748162 ,p-value: 0.0
+ad_stat: 932117.4023276803 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6357499549389249 ,p-value: 0.0
+ad_stat: 642817.320116536 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5893809532612664 ,p-value: 0.0
+ad_stat: 598653.8855923164 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.633951555878044 ,p-value: 0.0
+ad_stat: 640691.2660017003 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.585227246467905 ,p-value: 0.0
+ad_stat: 594274.4156339981 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6074256030096177 ,p-value: 0.0
+ad_stat: 613384.5696438566 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+sum_ks_stat: 4.70900366496744 ,sum_ad_stat: 5235545.367962876
+Valid-18: 0.0000000039325166
+Valid-18: Acc:0.4606536760924092
+19/100
+lr: 1e-05
+Train-19: 0.0000000052129889
+Train-19: Acc:0.5610452195065156
+KS statistic: 0.8613043217037246 ,p-value: 0.0
+ad_stat: 1207513.4323656838 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7467608019484872 ,p-value: 0.0
+ad_stat: 825826.7955646983 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5307408965074201 ,p-value: 0.0
+ad_stat: 567605.5579237049 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6105596585525921 ,p-value: 0.0
+ad_stat: 616410.5347904025 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.49426222310547063 ,p-value: 0.0
+ad_stat: 543604.4611279817 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5824068853322735 ,p-value: 0.0
+ad_stat: 593632.2780049196 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5501356453901365 ,p-value: 0.0
+ad_stat: 576623.8010475917 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+sum_ks_stat: 4.376170432540105 ,sum_ad_stat: 4931216.860824982
+Valid-19: 0.0000000039173680
+Valid-19: Acc:0.4717642021614791
+20/100
+lr: 1e-05
+Train-20: 0.0000000052129606
+Train-20: Acc:0.5609279245996893
+KS statistic: 0.7469728200838367 ,p-value: 0.0
+ad_stat: 887488.8025438967 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7287987641711304 ,p-value: 0.0
+ad_stat: 788241.6682721878 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6815476052927121 ,p-value: 0.0
+ad_stat: 701860.4389145421 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6058282456683598 ,p-value: 0.0
+ad_stat: 612421.0258332411 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6282802151839647 ,p-value: 0.0
+ad_stat: 634867.1601776008 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5575961418476427 ,p-value: 0.0
+ad_stat: 577219.5454518413 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5483008508455307 ,p-value: 0.0
+ad_stat: 575818.5983039077 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+sum_ks_stat: 4.497324643093177 ,sum_ad_stat: 4777917.239497217
+Valid-20: 0.0000000039193106
+Valid-20: Acc:0.5116919459848106
+21/100
+lr: 1e-05
+Train-21: 0.0000000052129161
+Train-21: Acc:0.5611015229850537
+KS statistic: 0.8312445406774414 ,p-value: 0.0
+ad_stat: 1117350.026159978 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7425914970906722 ,p-value: 0.0
+ad_stat: 815870.4394249552 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.64620816830196 ,p-value: 0.0
+ad_stat: 655116.1372501556 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5313353560749262 ,p-value: 0.0
+ad_stat: 571445.126828318 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6108450453614822 ,p-value: 0.0
+ad_stat: 617164.8190157023 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.583361833500483 ,p-value: 0.0
+ad_stat: 594602.0354350873 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5506867770008272 ,p-value: 0.0
+ad_stat: 577450.2913367032 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+sum_ks_stat: 4.496273218007792 ,sum_ad_stat: 4948998.8754509
+Valid-21: 0.0000000039171519
+Valid-21: Acc:0.4630157512390971
+22/100
+lr: 1e-05
+Train-22: 0.0000000052129865
+Train-22: Acc:0.5609264100313085
+KS statistic: 0.8166811478326779 ,p-value: 0.0
+ad_stat: 1076738.3928066008 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.8272271725215253 ,p-value: 0.0
+ad_stat: 1027154.4190442708 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7216490735905128 ,p-value: 0.0
+ad_stat: 768617.4129839889 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6907389091984675 ,p-value: 0.0
+ad_stat: 714094.9000958052 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7301003359938625 ,p-value: 0.0
+ad_stat: 784877.1666919694 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6743834720598227 ,p-value: 0.0
+ad_stat: 692732.4374308705 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6313668988274878 ,p-value: 0.0
+ad_stat: 636261.6694139721 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+sum_ks_stat: 5.092147010024356 ,sum_ad_stat: 5700476.398467477
+Valid-22: 0.0000000039923481
+Valid-22: Acc:0.4545256174687758
+23/100
+lr: 1e-05
+Train-23: 0.0000000052129520
+Train-23: Acc:0.5610349781393691
+KS statistic: 0.855513973554926 ,p-value: 0.0
+ad_stat: 1183280.472355925 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.7641428228106095 ,p-value: 0.0
+ad_stat: 863778.4104854533 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6752090140636771 ,p-value: 0.0
+ad_stat: 692907.6177281798 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6109952489451087 ,p-value: 0.0
+ad_stat: 616143.6996984347 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.6247798939793783 ,p-value: 0.0
+ad_stat: 630362.705714079 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5556354073752271 ,p-value: 0.0
+ad_stat: 576725.4103115771 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+KS statistic: 0.5988293363774593 ,p-value: 0.0
+ad_stat: 606048.2510361306 ,ad_critical_values: [0.325 1.226 1.961 2.718 3.752 4.592 6.546] ,ad_significance_levels: 0.001
+sum_ks_stat: 4.685105697106386 ,sum_ad_stat: 5169246.56732978
+Valid-23: 0.0000000039252463
+Valid-23: Acc:0.4627626334418540
