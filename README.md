@@ -1,11 +1,5 @@
 # Combining deep learning on order books with reinforcement learning for profitable trading
 
-## Team members
-
-| CID      | Name           | Email |
-|--------------|----------------|-----|
-| 02258000 | Chengtian, HE  | chengtian.he22@imperial.ac.uk |
-
 
 
 ## Description
