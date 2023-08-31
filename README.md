@@ -40,14 +40,16 @@ sys.path.append(os.path.abspath(".."))
 - XGBoost: set parameters in "/RL/xgb.py" and run it. Then a model will be generated as "/RL/bst".
 
 ### Evaluation
-- Evaluate Q-Learning performance with different time series forecasting models: run "/RL/eval_ql_agents.py".
-- Evaluate reinforcement learning performance: run "/RL/eval_deep_agents.py".
-- Evaluate deep reinforcement learning performance with XGBoost: run "/RL/eval_xgb_agents.py".
+- Evaluate Q-Learning PnL performance with different time series forecasting models: run "/RL/eval_ql_agents.py".
+- Evaluate reinforcement learning PnL performance: run "/RL/eval_deep_agents.py".
+- Evaluate deep reinforcement learning PnL performance with XGBoost: run "/RL/eval_xgb_agents.py".
 - To control "short", modify code in function "test" in "DQN", "PPO", "QLearning_multi" and "xgb". There is code: "if action == 0: action = 1". If allow short, then comment it. If not, uncomment it.
+- "/evaluation/latexTable.py" is used to generate table in LaTeX.
+- “/evaluation/visualiseAgent.py” visualise how agent makes decisions.
+- “/evaluation/statisticalSignificance.py" calcualte the statistical significance for reward per trade of different models.
 
 ### Figures
 - Figures are saved in folder "figure".
-- "/figure/latexTable.py" is used to generate table in LaTeX.
 
 ## Code citation
 ### Time series forecasting Models

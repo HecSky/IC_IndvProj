@@ -112,6 +112,7 @@ class PPO_agent(object):
             action_rewards = []
             action_reward = 0
             rewards = [0]
+            rewards_list = [0.0]
             actions = []
             trade_num = 0
 
@@ -124,8 +125,8 @@ class PPO_agent(object):
     
                 action = self.agent.predict(state).item()
     
-                # if action == 0:
-                #     action = 1
+                if action == 0:
+                    action = 1
     
                 actions.append(action)
     
@@ -150,6 +151,7 @@ class PPO_agent(object):
                 total_reward += reward
                 abs_total_reward += abs(reward)
                 rewards.append(total_reward)
+                rewards_list.append(reward)
     
                 if last_action == action:
                     action_duration += 1
@@ -166,7 +168,7 @@ class PPO_agent(object):
                     positive_reward += reward
     
             if return_res:
-                return rewards, trade_num, np.array(action_durations).mean().item(), action_rewards
+                return rewards, trade_num, np.array(action_durations), action_rewards, rewards_list
             else:
                 rewards = np.array(rewards)
                 xs = np.arange(0, len(rewards))

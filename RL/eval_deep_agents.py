@@ -23,10 +23,13 @@ def eval_ql(dataset: str, model_list: list, training_datasets: str):
     datetime_list = list(map(datetime.fromtimestamp, timestamps))
     datetime_list = list(map(to_str, datetime_list))[100:]
     total_rewards_list = []
+    rewards_list = []
     trade_num_list = []
     average_action_duration_list = []
+    std_action_duration_list = []
     average_reward_list = []
     std_reward_list = []
+    action_rewards_list = []
     for model_name in model_list:
         if model_name == "QLearning":
             agent = QL_agent(model_type="DLinear", V=training_datasets)
@@ -43,11 +46,14 @@ def eval_ql(dataset: str, model_list: list, training_datasets: str):
             ppo_Agent.actor = torch.load("V" + training_datasets + "-DLinear-PPO.pt")
             agent = PPO_agent(ppo_Agent)
             env_test = LOBEnv_valid_preprocess(data_V=dataset, model_V=training_datasets, model_type="DLinear", deep=True)
-        rewards, trade_num, average_action_duration, action_rewards = agent.test(env_test, return_res=True)
-        total_rewards_list.append(rewards)
+        total_rewards, trade_num, action_duration, action_rewards, rewards = agent.test(env_test, return_res=True)
+        total_rewards_list.append(total_rewards)
+        rewards_list.append(rewards)
         trade_num_list.append(trade_num)
-        average_action_duration_list.append(average_action_duration)
+        average_action_duration_list.append(action_duration.mean().item())
+        std_action_duration_list.append(action_duration.std().item())
         action_rewards = np.array(action_rewards)
+        action_rewards_list.append(action_rewards)
         average_reward = action_rewards.mean()
         average_reward_list.append(average_reward)
         std_reward = action_rewards.std()
@@ -71,10 +77,10 @@ def eval_ql(dataset: str, model_list: list, training_datasets: str):
     plt.ylabel('PnL')
     plt.xticks(rotation=30)
     plt.grid(True)
-    plt.savefig("../figure/eval_deep_NL_" + dataset + ".png")
+    # plt.savefig("../figure/eval_deep_SNL_" + dataset + ".png")
     plt.show()
     total_rewards_list = tmp
-    return total_rewards_list, trade_num_list, average_action_duration_list, average_reward_list, std_reward_list
+    return total_rewards_list, trade_num_list, average_action_duration_list, std_action_duration_list, average_reward_list, std_reward_list, action_rewards_list, rewards_list
 
 
 if __name__ == "__main__":
@@ -83,23 +89,32 @@ if __name__ == "__main__":
         model_training_datasets = "1;2;3;4"
         testing_datasets = ["5", "6", "7", "8", "9"]
         total_rewards_list = []
+        rewards_list = []
         trade_num_list = []
         average_action_duration_list = []
+        std_action_duration_list = []
         average_reward_list = []
         std_reward_list = []
+        action_rewards_list = []
         for testing_dataset in testing_datasets:
-            total_rewards, trade_num, average_action_duration, average_reward, std_reward = eval_ql(
+            total_rewards, trade_num, average_action_duration, std_action_duration, average_reward, std_reward, action_rewards, rewards = eval_ql(
                 dataset=testing_dataset,
                 model_list=list_model,
                 training_datasets=model_training_datasets)
             total_rewards_list.append(total_rewards)
+            rewards_list.append(rewards)
             trade_num_list.append(trade_num)
             average_action_duration_list.append(average_action_duration)
+            std_action_duration_list.append(std_action_duration)
             average_reward_list.append(average_reward)
             std_reward_list.append(std_reward)
-        result = [total_rewards_list, trade_num_list, average_action_duration_list, average_reward_list,
-                  std_reward_list]
-        print(result)
-        f = open("../figure/eval_deep_NL_res.pkl", "wb")
-        pickle.dump(result, f)
+            action_rewards_list.append(action_rewards)
+        result = [total_rewards_list, trade_num_list, average_action_duration_list, std_action_duration_list,
+                  average_reward_list, std_reward_list]
+        f = open("../evaluation/eval_deep_SNL_action_rewards_list.pkl", "wb")
+        pickle.dump(action_rewards_list, f)
         f.close()
+        print(result)
+        # f = open("../evaluation/eval_deep_SNL_res.pkl", "wb")
+        # pickle.dump(result, f)
+        # f.close()
