@@ -4,7 +4,7 @@
 
 ## Description
 
-This project studied a framework on high frequency trading on Bitcoin-TUSD on Binance, and this is the code of the implementation of this project.
+A framework for high-frequency trading, and this is the code of the implementation of the project.
 
 
 ## Code guide
