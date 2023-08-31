@@ -80,7 +80,7 @@ def calculate_statistics():
             print(pvalues_list)
 
         plt.subplots_adjust(wspace=0.7)
-        plt.savefig("./statistics_" + model_kind + "_" + market_kind + ".png", bbox_inches="tight")
+        plt.savefig("./statistics_" + model_kind + ".png", bbox_inches="tight")
         plt.show()
 
 
